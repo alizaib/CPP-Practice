@@ -1,8 +1,13 @@
 #include <iostream>
 #include "Headers/Misc.h"
+#include "Headers/FileHandling.h"
 
 using namespace std;
 
-int main() {
-	PlayWithPointers();	
+int main() {	
+	//FileHandlingEntryPoint();
+	//PlayWithPointers();
+
+
+	cout << endl;
 }

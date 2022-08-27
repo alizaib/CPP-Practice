@@ -144,9 +144,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Sources\FileHandling.cpp" />
     <ClCompile Include="Sources\Misc.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Headers\FileHandling.h" />
     <ClInclude Include="Headers\Misc.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

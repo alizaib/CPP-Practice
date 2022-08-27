@@ -21,9 +21,15 @@
     <ClCompile Include="Sources\Misc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Sources\FileHandling.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Headers\Misc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\FileHandling.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
