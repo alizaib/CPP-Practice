@@ -2,15 +2,17 @@
 #include <corecrt_memory.h>
 #include <iostream>
 #include <typeinfo>
+#include <vector>
 
 using namespace std;
 
-void PlayWithPointers() {
-	CharArray();
+void MiscEntryPoint() {
+	//CharArray();
 	//MultiDimentionalArray();
 	//ConstantPointers();
 	//PointersWithStrings();
 	//SubtractPointers();
+	functionPointers();
 	
 }
 void CharArray() {
@@ -92,4 +94,69 @@ void PointersWithStrings() {
 	name[3] = '\0';
 
 	cout << name;
+}
+
+void NestedTryCatchDemo() {
+	try
+	{
+		try
+		{
+			throw 1;
+		}
+		catch (float)
+		{
+			cout << "inside float catch block";
+		}
+
+	}
+	catch (int j)
+	{
+		cout << "inside int catch block: " << j;
+	}
+}
+
+void HelloWorld() {
+	cout << "HelloWorld" << endl;
+}
+
+void PrintMessage(const char* mesg) {
+	cout << mesg << endl;
+}
+
+void HelloWithTypeDef(const char* mesg) {
+	cout << mesg << endl;
+}
+
+void PrintValue(int value) {
+	cout << "Value is: " << value << endl;
+}
+
+void ForEach(vector<int> values, void(*f)(int)) {
+	for (int value : values)
+		f(value);
+}
+
+void functionPointers() {
+
+	// can use 
+	// auto f = HelloWorld;
+	void(*f)() = HelloWorld; 
+
+	f();
+	f();
+
+	void(*printMessage)(const char*) = PrintMessage;
+
+	printMessage("Message is Hello Again");
+
+	typedef void(*HelloWorldFunction)(const char*);
+
+	HelloWorldFunction f2 = HelloWithTypeDef;
+
+	f2("Hello with typedef now");
+
+	vector<int> values = { 1, 3, 5, 7, 9 };
+	ForEach(values, PrintValue);
+	ForEach(values, [](int v) { cout << "In Lambda Value is :" << v << endl; });
+
 }

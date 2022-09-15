@@ -1,6 +1,6 @@
 #pragma once
 
-void PlayWithPointers();
+void MiscEntryPoint();
 
 void CharArray();
 void MultiDimentionalArray();
@@ -9,3 +9,5 @@ void DisplayArray(int[][10], int);
 void ConstantPointers();
 void SubtractPointers();
 void PointersWithStrings();
+void NestedTryCatchDemo();
+void functionPointers();

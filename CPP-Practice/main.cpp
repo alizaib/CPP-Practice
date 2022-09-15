@@ -1,13 +1,16 @@
 #include <iostream>
+#include <sstream>
+#include <vector>
 #include "Headers/Misc.h"
 #include "Headers/FileHandling.h"
 
 using namespace std;
 
-int main() {	
-	//FileHandlingEntryPoint();
-	//PlayWithPointers();
+int main() {
 
+	//FileHandlingEntryPoint();	
+	MiscEntryPoint();
 
-	cout << endl;
+	system("pause");
 }
+
