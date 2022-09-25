@@ -145,10 +145,14 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Sources\FileHandling.cpp" />
+    <ClCompile Include="Sources\HandlingArrays.cpp" />
+    <ClCompile Include="Sources\HandlingPointers.cpp" />
     <ClCompile Include="Sources\Misc.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Headers\FileHandling.h" />
+    <ClInclude Include="Headers\HandlingArrays.h" />
+    <ClInclude Include="Headers\HandlingPointers.h" />
     <ClInclude Include="Headers\Misc.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
