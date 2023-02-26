@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="cs201.cpp" />
+    <ClCompile Include="FileHandling.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="HandlingArrays.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="HandlingPointers.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Misc.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{8b20e91b-160f-4593-9077-e7a96fe6b1ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{2a66c34f-ef44-4334-974b-77109dfcce92}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FileHandling.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="HandlingArrays.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="HandlingPointers.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Misc.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

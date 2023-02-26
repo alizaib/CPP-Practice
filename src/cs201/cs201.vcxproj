@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{e5d25345-4688-4e07-b39b-c98631b5d8b2}</ProjectGuid>
-    <RootNamespace>CPPPractice</RootNamespace>
+    <ProjectGuid>{03a30593-9fe5-4518-821c-c46dbfec12f3}</ProjectGuid>
+    <RootNamespace>cs201</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -70,22 +70,6 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)bin\intermediate\\$(Configuration)\</IntDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)bin\intermediate\\$(Configuration)\</IntDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)bin\intermediate\\$(Configuration)\</IntDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)bin\intermediate\\$(Configuration)\</IntDir>
-  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -143,17 +127,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Sources\FileHandling.cpp" />
-    <ClCompile Include="Sources\HandlingArrays.cpp" />
-    <ClCompile Include="Sources\HandlingPointers.cpp" />
-    <ClCompile Include="Sources\Misc.cpp" />
+    <ClCompile Include="cs201.cpp" />
+    <ClCompile Include="FileHandling.cpp" />
+    <ClCompile Include="HandlingArrays.cpp" />
+    <ClCompile Include="HandlingPointers.cpp" />
+    <ClCompile Include="Misc.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Headers\FileHandling.h" />
-    <ClInclude Include="Headers\HandlingArrays.h" />
-    <ClInclude Include="Headers\HandlingPointers.h" />
-    <ClInclude Include="Headers\Misc.h" />
+    <ClInclude Include="FileHandling.h" />
+    <ClInclude Include="HandlingArrays.h" />
+    <ClInclude Include="HandlingPointers.h" />
+    <ClInclude Include="Misc.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

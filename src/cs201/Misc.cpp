@@ -1,6 +1,6 @@
-#include "../Headers/Misc.h"
-#include "../Headers/HandlingArrays.h"
-#include "../Headers/HandlingPointers.h"
+#include "Misc.h"
+#include "HandlingArrays.h"
+#include "HandlingPointers.h"
 
 #include <iostream>
 

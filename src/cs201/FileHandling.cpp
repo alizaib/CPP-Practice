@@ -1,4 +1,4 @@
-#include "../Headers/FileHandling.h"
+#include "FileHandling.h"
 
 
 // Note: Executable path is where the program code is and not the out put directory
@@ -31,7 +31,7 @@ void ReadFile() {
 
 		myFile >> name >> salary;
 		cout << name << '\t' << salary;
-		
+
 		long fileSize = GetSizeOfFile(myFile);
 		long currentPosition = myFile.tellg();
 
@@ -69,7 +69,7 @@ void ReadPayroll() {
 	currentPosition = myFile.tellg();
 	cout << currentPosition << endl;
 
-	
+
 	while (!myFile.eof()) {
 
 		char line[30];
@@ -77,11 +77,11 @@ void ReadPayroll() {
 		float salary = 0.0;
 
 		char* next_token1 = NULL; //strtok_s need a context char**
-		
+
 		myFile.getline(line, 30);
-		name = strtok_s(line, " ", &next_token1);		
+		name = strtok_s(line, " ", &next_token1);
 		salary = atof(strtok_s(NULL, " ", &next_token1));
-		cout << name << "\t" << salary << endl;		
+		cout << name << "\t" << salary << endl;
 	}
 	myFile.clear();
 
@@ -99,14 +99,14 @@ void WriteToAFile() {
 	if (!myFile) {
 		cout << "couldn't open the file";
 		return;
-	}	
+	}
 
 	long writePosition = myFile.tellp();
 	cout << writePosition << endl;
-	
-	
+
+
 	myFile.write("Hussain 265", 11);
-	
+
 
 	myFile.close();
 }
@@ -122,11 +122,11 @@ void ReadFileInReverse() {
 
 	int currentPosition = myFile.tellg();
 
-	while (currentPosition!= 0) {
+	while (currentPosition != 0) {
 		char ch = myFile.get();
 		cout << ch;
 
-		if(ch == '\n')
+		if (ch == '\n')
 			myFile.seekg(-1L, ios::cur);
 
 		myFile.seekg(-2L, ios::cur);

@@ -1,4 +1,4 @@
-#include "../Headers/HandlingPointers.h"
+#include "HandlingPointers.h"
 #include <iostream>
 #include <vector>
 
@@ -12,26 +12,16 @@ void HandlingPointersEntryPoint() {
 }
 
 void ConstantPointers() {
-	const char a = 'A';
-	const char b = 'B';
-	char c = 'C';
-	char d = 'D';
+	const int a = 9;
+	int b = 2;
+	//clockwise spiral rule -> read from left to right
+	//int* ptr; // ptr is a pointer to int
+	//const int* const ptr = &a; //ptr is const pointer to int const (const int)
+	//const int* ptr; //ptr is a pointer to int const
+	//int const* ptr; //ptr is a pointer to const int
+	//int* const ptr = &b; //ptr is a const pointer to an int
 
-	char const* cPtr1; //cPtr1 is a pointer to a charter constant, so it can be assigned address of only a const char
-	cPtr1 = &a;
-	//*cPtr1 = 'z'; //is not allowed because cPtr1 is a pointer to a constant char and const char cannot be changed.
-
-	char* const cPtr2 = &c; // cPtr2 is a constant pointer, so it will need an address to point to at declaration and the address it is pointing to 
-	// cannot be changed, the contents however can be changed
-	*cPtr2 = 'z';
-	// cPtr2 = &d;  // Not allowed
-
-	const char* const cPtr3 = &d; // cPtr3 is a const pointer to a const char, although initially is assigned address of non-const char
-	// but it will treat it as const and will not allow to change the contants or the address that it is pointing to
-// so following both lines are not allowed
-//*cPtr3 = 'z';
-//cPtr3 = &a;
-
+	//https://stackoverflow.com/questions/1143262/what-is-the-difference-between-const-int-const-int-const-and-int-const
 }
 
 void SubtractPointers() {

@@ -1,4 +1,4 @@
-#include "../Headers/HandlingArrays.h"
+#include "HandlingArrays.h"
 #include <iostream>
 
 using namespace std;
