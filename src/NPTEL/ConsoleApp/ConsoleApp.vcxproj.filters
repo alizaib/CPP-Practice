@@ -19,9 +19,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ConsoleApp.cpp" />
+    <ClCompile Include="OperatorOverloads.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="StackDemo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OperatorsOverload.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
