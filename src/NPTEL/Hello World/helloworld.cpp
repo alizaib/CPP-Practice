@@ -2,18 +2,23 @@
 
 int main()
 {
+    int n = 10;
     printf("Hello World!!");
+
+    printf("\nvalue of n is %d", n);
 }
 
 /*
-    To compile with gcc
+    1. To compile with gcc
     gcc -c helloworld.cpp    // will produce helloworld.o
     gcc helloworld.o -o helloworld // will produce the exe
     or if you wanna do it one step
     gcc helloworld.cpp -o helloworld //will produce the exe
 
-    to run the exe type
+    2. to run the exe type
     ./helloworld
 
-    gcc -S helloworld.cpp   //with capital S will produce the assembly language version of your code
+    3. gcc -S helloworld.cpp   //with capital S will produce the assembly language version of your code
+
+    4. gcc -E helloworld.cpp > helloworld_combined.c // will produce a combined C language program
 */
