@@ -9,6 +9,8 @@
                 "-g",
                 "${file}",
                 "source/test.cpp",
+                "-D",
+                "mydebug",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],

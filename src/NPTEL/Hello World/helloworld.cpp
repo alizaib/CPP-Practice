@@ -1,13 +1,18 @@
 #include <iostream>
 #include "headers\test.h"
+using namespace std;
 
 int main()
 {
     int n = 10;
+    cout << "display a string using cout"<<endl;
     printf("Hello World!!");
 
-    printf("\nvalue of n is %d", n);
+    printf("\nvalue of n is %d\n", n);
 
+    #ifdef mydebug
+    printf("\nmydebug flag was defined\n");
+    #endif
     TestCall();
 }
 
@@ -27,4 +32,8 @@ int main()
     3. gcc -S helloworld.cpp   //with capital S will produce the assembly language version of your code
 
     4. gcc -E helloworld.cpp > helloworld_combined.c // will produce a combined C language program
+
+    5. -D flag will define a flag for code and -U will undefine a previously define flag 
+
+    6. a file can be include at compilation time using -include iostream
 */
